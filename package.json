@@ -41,5 +41,5 @@
     "lint": "eslint *.js test/**/*.js",
     "test": "npm run clean && mocha ./test/**/*.spec.js --timeout 5000"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
