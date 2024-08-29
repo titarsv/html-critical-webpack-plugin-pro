@@ -30,18 +30,16 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "html-critical-webpack-plugin",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/titarsv/html-critical-webpack-plugin-pro.git"
   },
   "author": "Tit@r",
-  "license": "MIT",
   "scripts": {
     "build": "npm run clean && npm run lint && webpack --config ./webpack.config.js",
     "clean": "rimraf ./dist && rimraf ./test/cases/**/build",
     "lint": "eslint *.js test/**/*.js",
     "test": "npm run clean && mocha ./test/**/*.spec.js --timeout 5000"
   },
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
