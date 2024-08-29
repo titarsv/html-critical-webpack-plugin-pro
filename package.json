@@ -1,0 +1,47 @@
+{
+  "bundleDependencies": false,
+  "dependencies": {
+    "critical": "^1.0.0"
+  },
+  "deprecated": false,
+  "name": "html-critical-webpack-plugin-pro",
+  "description": "Webpack plugin for the critical CSS inliner library.",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "eslint": "^4.19.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^11.6.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "mocha": "^5.0.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.8.2",
+    "webpack-cli": "^2.0.11"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "README.md",
+    "index.js"
+  ],
+  "keywords": [
+    "webpack",
+    "critical"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "html-critical-webpack-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titarsv/html-critical-webpack-plugin-pro.git"
+  },
+  "author": "Tit@r",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run lint && webpack --config ./webpack.config.js",
+    "clean": "rimraf ./dist && rimraf ./test/cases/**/build",
+    "lint": "eslint *.js test/**/*.js",
+    "test": "npm run clean && mocha ./test/**/*.spec.js --timeout 5000"
+  },
+  "version": "1.0.0",
+}
